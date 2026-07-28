@@ -14,6 +14,17 @@ public class ProductEntity {
     @Column(name = "product_id")
     private String productId;
 
+    @Column(name = "price")
+    private double price;
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     public Long getId() {
         return id;
     }
