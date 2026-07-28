@@ -1,6 +1,6 @@
 package csd214.app.pojos;
 
-import bookstore.entities.TicketEntity;
+import csd214.app.entities.TicketEntity;
 
 import java.util.Scanner;
 

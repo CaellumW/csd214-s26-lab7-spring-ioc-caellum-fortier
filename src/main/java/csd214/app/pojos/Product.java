@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.UUID;
 
 /**
- * DTO for {@link bookstore.entities.ProductEntity}
+ * DTO for {@link csd214.app.entities.ProductEntity}
  * Separation of Concerns: Handles Console Presentation & I/O
  */
 public abstract class Product extends Editable implements SaleableItem, Serializable {

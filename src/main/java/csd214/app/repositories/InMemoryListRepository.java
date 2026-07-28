@@ -1,6 +1,6 @@
 package csd214.app.repositories;
 
-import bookstore.entities.ProductEntity;
+import csd214.app.entities.ProductEntity;
 
 import java.util.ArrayList;
 import java.util.List;

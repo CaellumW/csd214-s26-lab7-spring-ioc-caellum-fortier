@@ -1,6 +1,6 @@
 package csd214.app.repositories;
 
-import bookstore.entities.*;
+import csd214.app.entities.*;
 
 import java.util.Date;
 import java.util.List;
@@ -10,8 +10,10 @@ public class RepositoryApp {
         System.out.println("Repository Pattern Demo");
 
         // 1. Instantiate Repository
-        IRepository<ProductEntity> repo = new ProductRepository();
 
+//        IRepository<ProductEntity> repo = new ProductRepository();
+
+        ProductRepository repo = null;
         try {
             // 2. Create Items
             // Inside RepositoryApp.java main()
@@ -32,10 +34,6 @@ public class RepositoryApp {
             repo.save(new DiscMagEntity("Retro Gamer", 15.00, 20, 100, new Date(), true));
 
 
-
-
-
-
             // 3. List All (Polymorphic)
             System.out.println("\n--- All Items ---");
             List<ProductEntity> items = repo.findAll();
@@ -45,7 +43,7 @@ public class RepositoryApp {
 
             // 4. Update
             if (!items.isEmpty()) {
-                ProductEntity first = items.getFirst();
+                ProductEntity first = items.get(0);
                 System.out.println("\n--- Updating Item ID: " + first.getId() + " ---");
 
                 if (first instanceof TicketEntity) {

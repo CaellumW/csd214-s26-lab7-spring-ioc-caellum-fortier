@@ -1,6 +1,6 @@
 package csd214.app.pojos;
 
-import bookstore.entities.NailAccessoryEntity;
+import csd214.app.entities.NailAccessoryEntity;
 
 import java.util.Objects;
 import java.util.Scanner;

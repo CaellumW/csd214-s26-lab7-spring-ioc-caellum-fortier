@@ -1,7 +1,7 @@
 package csd214.app.pojos;
 
-import bookstore.entities.NailKitEntity;
-import bookstore.entities.NailProductEntity;
+import csd214.app.entities.NailKitEntity;
+import csd214.app.entities.NailProductEntity;
 
 import java.util.ArrayList;
 import java.util.Objects;

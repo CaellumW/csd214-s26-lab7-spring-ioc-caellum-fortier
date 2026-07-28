@@ -1,10 +1,10 @@
 package csd214.app.services;
 
-import bookstore.entities.NailProductEntity;
-import bookstore.entities.ProductEntity;
-import bookstore.entities.PublicationEntity;
-import bookstore.entities.VehiclePartEntity;
-import bookstore.repositories.IRepository;
+import csd214.app.entities.NailProductEntity;
+import csd214.app.entities.ProductEntity;
+import csd214.app.entities.PublicationEntity;
+import csd214.app.entities.VehiclePartEntity;
+import csd214.app.repositories.IRepository;
 
 public class StorefrontTransactionService {
     private final IRepository<ProductEntity> repository;

@@ -1,12 +1,12 @@
 package csd214.app.pojos;
 
-import bookstore.entities.BookEntity;
+import csd214.app.entities.BookEntity;
 
 import java.util.Objects;
 import java.util.Scanner;
 
 /**
- * DTO for {@link bookstore.entities.BookEntity}
+ * DTO for {@link csd214.app.entities.BookEntity}
  */
 public class Book extends Publication {
     private String author = "";

@@ -1,6 +1,6 @@
 package csd214.app.pojos;
 
-import bookstore.entities.BatteryEntity;
+import csd214.app.entities.BatteryEntity;
 
 import java.util.Objects;
 import java.util.Scanner;
@@ -73,8 +73,8 @@ public class Battery extends VehiclePart{
 
     // Add to src/main/java/bookstore/pojos/Battery.java
 
-    public bookstore.entities.BatteryEntity toEntity() {
-        bookstore.entities.BatteryEntity entity = new bookstore.entities.BatteryEntity();
+    public csd214.app.entities.BatteryEntity toEntity() {
+        csd214.app.entities.BatteryEntity entity = new csd214.app.entities.BatteryEntity();
         entity.setId(this.getDbId()); // Inherited from Product DTO
         entity.setProductId(this.getProductId()); // Inherited from Product DTO
         entity.setManufacturer(this.getManufacturer()); // Inherited from VehiclePart DTO
@@ -83,7 +83,7 @@ public class Battery extends VehiclePart{
         return entity;
     }
 
-    public static Battery fromEntity(bookstore.entities.BatteryEntity entity) {
+    public static Battery fromEntity(csd214.app.entities.BatteryEntity entity) {
         Battery battery = new Battery(
                 entity.getManufacturer(),
                 entity.getPrice(),

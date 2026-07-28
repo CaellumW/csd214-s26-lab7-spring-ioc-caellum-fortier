@@ -1,12 +1,12 @@
 package csd214.app.pojos;
 
-import bookstore.entities.MagazineEntity;
+import csd214.app.entities.MagazineEntity;
 
 import java.util.Date;
 import java.util.Scanner;
 
 /**
- * DTO for {@link bookstore.entities.MagazineEntity}
+ * DTO for {@link csd214.app.entities.MagazineEntity}
  */
 public class Magazine extends Publication {
     private int orderQty = 0;

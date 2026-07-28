@@ -1,6 +1,6 @@
 package csd214.app.pojos;
 
-import bookstore.entities.GelPolishEntity;
+import csd214.app.entities.GelPolishEntity;
 
 import java.util.Objects;
 import java.util.Scanner;

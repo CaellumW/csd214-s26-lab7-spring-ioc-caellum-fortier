@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 /**
- * DTO for {@link bookstore.entities.VehiclePartEntity}
+ * DTO for {@link csd214.app.entities.VehiclePartEntity}
  */
 public abstract class VehiclePart extends Product {
     private String manufacturer;

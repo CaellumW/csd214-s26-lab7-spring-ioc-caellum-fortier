@@ -1,6 +1,6 @@
 package csd214.app.repositories;
 
-import bookstore.entities.ProductEntity;
+import csd214.app.entities.ProductEntity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;

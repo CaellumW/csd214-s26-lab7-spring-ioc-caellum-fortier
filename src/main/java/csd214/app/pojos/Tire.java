@@ -1,12 +1,12 @@
 package csd214.app.pojos;
 
-import bookstore.entities.TireEntity;
+import csd214.app.entities.TireEntity;
 
 import java.util.Objects;
 import java.util.Scanner;
 
 /**
- * DTO for {@link bookstore.entities.TireEntity}
+ * DTO for {@link csd214.app.entities.TireEntity}
  */
 public class Tire extends VehiclePart{
     private int diameter;

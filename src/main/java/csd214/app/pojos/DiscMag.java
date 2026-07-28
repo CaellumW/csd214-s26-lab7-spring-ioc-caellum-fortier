@@ -1,12 +1,12 @@
 package csd214.app.pojos;
 
-import bookstore.entities.DiscMagEntity;
+import csd214.app.entities.DiscMagEntity;
 
 import java.util.Date;
 import java.util.Scanner;
 
 /**
- * DTO for {@link bookstore.entities.DiscMagEntity}
+ * DTO for {@link csd214.app.entities.DiscMagEntity}
  */
 public class DiscMag extends Magazine {
     private boolean hasDisc;

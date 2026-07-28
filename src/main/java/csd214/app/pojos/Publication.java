@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 /**
- * DTO for {@link bookstore.entities.PublicationEntity}
+ * DTO for {@link csd214.app.entities.PublicationEntity}
  */
 public abstract class Publication extends Product {
     private String title = "";

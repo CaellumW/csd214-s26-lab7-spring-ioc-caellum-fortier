@@ -1,18 +1,23 @@
 package csd214.app.repositories;
 
 import csd214.app.entities.ProductEntity;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
 public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
 
-//    private final EntityManagerFactory emf;
-//    private final EntityManager em;
+//    final EntityManagerFactory emf;
+//    final EntityManager em;
 
 
     List<ProductEntity> findByPriceLessThan(double price);
     List<ProductEntity> findByTitleContainingIgnoreCase(String title);
+    ProductEntity findByProductId(String productId);
+    void delete(Long id);
+    void close();
 
 
 
@@ -40,15 +45,12 @@ public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
 //        }
 //    }
 //
-//    @Override
-//    public ProductEntity findById(Long id) {
-//        return null;
-//    }
 //
-////    @Override
-////    public ProductEntity findById(Long id) {
-////        return em.find(ProductEntity.class, id);
-////    }
+//
+//    @Override
+//    public default ProductEntity findById(Long id) {
+//        return em.find(ProductEntity.class, id);
+//    }
 //
 //    @Override
 //    public List<ProductEntity> findAll() {
